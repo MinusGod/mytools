@@ -1,20 +1,5 @@
 package com.feng.util;
 
-import java.security.KeyFactory;
-import java.security.KeyPair;
-import java.security.KeyPairGenerator;
-import java.security.NoSuchAlgorithmException;
-import java.security.PrivateKey;
-import java.security.PublicKey;
-import java.security.Signature;
-import java.security.interfaces.RSAPrivateKey;
-import java.security.interfaces.RSAPublicKey;
-import java.security.spec.PKCS8EncodedKeySpec;
-import java.security.spec.X509EncodedKeySpec;
-import java.util.HashMap;
-import java.util.Map;
-import sun.misc.BASE64Encoder
-import javax.crypto.Cipher;
 
 
 public class RSAUtil {
@@ -23,7 +8,7 @@ public class RSAUtil {
 	 * 生成Base64密钥对
 	 * @return
 	 */
-	public static Map<String, String> geneKeyPairs() {
+/*	public static Map<String, String> geneKeyPairs() {
 		KeyPairGenerator keyPairGen = null;
 		try {
 			keyPairGen = KeyPairGenerator.getInstance("RSA");
@@ -46,14 +31,14 @@ public class RSAUtil {
 		map.put("priKey", pristr);
 		return map;
 	}
-	
+	*/
 	/**
 	 * 根据base64字符串初始化公钥
 	 * @param pubKeyStr
 	 * @return
 	 * @throws Exception
 	 */
-	public static PublicKey strToPubKey(String pubKeyStr) 
+/*	public static PublicKey strToPubKey(String pubKeyStr) 
 			throws Exception {	
 		byte[] pubKeyArr = new BASE64Decoder().decodeBuffer(pubKeyStr);
 	    // 构造PKCS8EncodedKeySpec对象  
@@ -63,7 +48,7 @@ public class RSAUtil {
         // 取私钥匙对象  
         PublicKey pubKey = keyFactory.generatePublic(pkcs8KeySpec);
         return pubKey;		
-	}
+	}*/
 	
 	/**
 	 * 根据base64字符串初始化私钥
@@ -71,7 +56,7 @@ public class RSAUtil {
 	 * @return
 	 * @throws Exception
 	 */
-	public static PrivateKey strToPriKey(String priKeyStr) 
+/*	public static PrivateKey strToPriKey(String priKeyStr) 
 			throws Exception {	
         byte[] priKeyArr = new BASE64Decoder().decodeBuffer(priKeyStr);  
         // 取得私钥  
@@ -79,7 +64,7 @@ public class RSAUtil {
         KeyFactory keyFactory = KeyFactory.getInstance("RSA");  
         PrivateKey priKey = keyFactory.generatePrivate(pkcs8KeySpec);  
         return priKey;
-	}
+	}*/
 	
 	/**
 	 *  公钥加密数据
@@ -87,7 +72,7 @@ public class RSAUtil {
 	 * @param pubKeyStr
 	 * @return
 	 */
-	public static String pubKeyEncrypt(String data ,String pubKeyStr) {
+/*	public static String pubKeyEncrypt(String data ,String pubKeyStr) {
 		byte[] dataArr = data.getBytes();
 		PublicKey pubKey = null;
 		try {
@@ -106,7 +91,7 @@ public class RSAUtil {
 			e.printStackTrace();
 		}
         return  new BASE64Encoder().encode(dataEnc);
-	}
+	}*/
 	
 	/**
 	 * 私钥解密数据
@@ -114,7 +99,7 @@ public class RSAUtil {
 	 * @param priKeyStr
 	 * @return
 	 */
-	public static String priKeyDeco(String dataEnc, String priKeyStr) {
+/*	public static String priKeyDeco(String dataEnc, String priKeyStr) {
 		byte[] dataArr = null;
 		PrivateKey priKey = null;
 		try {
@@ -135,14 +120,14 @@ public class RSAUtil {
 		}	
         return  new String(dataEnced);
 	}
-	
+	*/
 	/**
 	 * 私钥生成签名
 	 * @param data
 	 * @param priKeyStr
 	 * @return
 	 */
-	public static String priKeyGenSign(String data, String priKeyStr) {
+/*	public static String priKeyGenSign(String data, String priKeyStr) {
 		byte[] dataByte = data.getBytes();
 		PrivateKey priKey = null;
 		try {
@@ -161,7 +146,7 @@ public class RSAUtil {
 			e.printStackTrace();
 		}	
         return  new BASE64Encoder().encode(dataSign);
-	}
+	}*/
 	
 	/**
 	 * 公钥验证签名
@@ -170,7 +155,7 @@ public class RSAUtil {
 	 * @param pubKeyStr
 	 * @return
 	 */
-	public static boolean pubKeyVerSign(String data, String sign ,String pubKeyStr) {
+/*	public static boolean pubKeyVerSign(String data, String sign ,String pubKeyStr) {
 		byte[] signArr = null;
 		PublicKey pubKey = null;
 		byte[] dataByte = data.getBytes();
@@ -192,6 +177,6 @@ public class RSAUtil {
 		}  
 	    // 验证签名是否正常  
 	    return flag;
-	}
+	}*/
 
 }
