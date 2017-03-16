@@ -41,7 +41,7 @@ public class JUnitTest {
 	}
 	
 	//@Test
-	public void testRSA(){
+/*	public void testRSA(){
 			String info = "冯立业feng123456";
 			System.out.println("加密前："+info);
 			String pubKey = "MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAI4FZPiLCo+PX+IpWC5dLnAUvq7fbnlRCOyneoAB4ozW"+
@@ -60,7 +60,7 @@ public class JUnitTest {
 	        String sign = RSAUtil.priKeyGenSign(info, priKey);
 	        System.out.println("签名：" +sign);
 	        System.out.println("验签："+RSAUtil.pubKeyVerSign(info, sign, pubKey));
-	}
+	}*/
 	
 	@Test
 	public void testEnum() {
