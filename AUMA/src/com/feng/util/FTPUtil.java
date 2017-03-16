@@ -13,7 +13,7 @@ import org.apache.commons.net.ftp.FTPReply;
 public class FTPUtil {
 	/** 
 	 * Description: 向FTP服务器上传文件 
-	 * @Version1.0 Jul 27, 2008 4:31:09 PM by 崔红保（cuihongbao@d-heaven.com）创建 
+	 * @Version1.0 Jul 27, 2008 4:31:09 PM by 冯立业创建 
 	 * @param url FTP服务器hostname 
 	 * @param port FTP服务器端口 
 	 * @param username FTP登录账号 
@@ -58,7 +58,7 @@ public class FTPUtil {
 	
 	/** 
 	 * Description: 从FTP服务器下载文件 
-	 * @Version1.0 Jul 27, 2008 5:32:36 PM by 崔红保（cuihongbao@d-heaven.com）创建 
+	 * @Version1.0 Jul 27, 2008 5:32:36 PM by 冯立业创建 
 	 * @param url FTP服务器hostname 
 	 * @param port FTP服务器端口 
 	 * @param username FTP登录账号 
