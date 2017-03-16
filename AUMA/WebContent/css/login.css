@@ -1,0 +1,26 @@
+*{margin: 0;padding: 0;}
+
+.bodyLogin{background-color: rgba(0, 82, 184, 0.93);font-family: "微软雅黑";}
+
+.loginbg{width:600px;height:280px;background-color: #fff;border-radius: 4px;margin:15% auto ;}
+
+.formbg{padding-top:60px;}
+
+.formbg div{margin: 20px auto;width: 420px;}
+
+.formbg div .username,.formbg div .pwd{outline:none;padding:0px 10px;font-family: "微软雅黑";width:196px;border:1px solid #ddd;height: 25px;line-height: 25px;}
+
+.formbg div .label1{font-size:14px;width: 80px;display: inline-block;}
+
+.btn_sub{font-family: "微软雅黑";border-radius:2px;border:0px;color:#fff;background-color: #00b8ac;outline: none;width: 220px;height: 30px;line-height: 30px;}
+
+.formbg div span{color:red;padding-left:10px;display:inline-block;}
+.homeIndex{
+		  
+		     padding-top:20px;
+		     height:580px;
+		     width:18%;
+		     border: 1px,solid,#fff;
+		     background-color: rgba(46, 132, 206, 0.67);
+		  
+		  }

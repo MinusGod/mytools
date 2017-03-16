@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.feng.dao.RoleFunctionDao"> 
+   
+  <select id="functionByRoleId" parameterType="int" resultType="com.feng.entity.Function">
+   select * from auth_function where id in (select function_id from auth_role_function where role_id = #{roleId})
+  </select>
+    
+</mapper>  
