@@ -21,7 +21,7 @@ import com.itextpdf.text.pdf.PdfWriter;
 
 public class PDFUtil {
 	public static void  main (String[] args){
-	/*	Document doc=new Document(PageSize.A4);
+		Document doc=new Document(PageSize.A4);
 		try {
 			BaseFont chinese=BaseFont.createFont("c://windows//fonts//simsun.ttc,1", BaseFont.IDENTITY_H,BaseFont.EMBEDDED);
 			//BaseFont chinese=BaseFont.createFont("STFangsong", "UniGB-UCS2-H",BaseFont.NOT_EMBEDDED);
@@ -40,15 +40,15 @@ public class PDFUtil {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		*/
-		/*PDFUtil.waterMark("F:/itext.pdf","F:/test.png","F:/text.pdf","水印",1);
-		System.out.println("水印生成成功");*/
+
+		PDFUtil.waterMark("F:/itext.pdf","F:/test.png","F:/text.pdf","水印",1);
+		System.out.println("水印生成成功");
 		PDFUtil.waterMark("F:/itext.pdf","F:/test.png","F:/text.pdf","水印",1);
 		System.out.println("水印生成成功");
 	}
 	
 	
-/*	 public static void waterMark1(String inputFile, String imageFile,  
+	 public static void waterMark1(String inputFile, String imageFile,
 	            String outputFile, String waterMarkName, int permission) {  
 	        try {  
 	            PdfReader reader = new PdfReader(inputFile);  
@@ -89,8 +89,8 @@ public class PDFUtil {
 	                        rise -= 18;  
 	  
 	                    }  
-	                }  
-	  
+	                }
+
 	                // 添加水印文字  
 	                under.endText();  
 	  
@@ -107,7 +107,7 @@ public class PDFUtil {
 	            e.printStackTrace();  
 	        }  
 	    }  
-	  */
+
 	
 	
 	
